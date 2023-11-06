@@ -17,7 +17,8 @@
       background-color: #FAFAFA;
     }
 
-    .self-intro {
+    .self-intro,
+    .side-project {
       margin: 1rem 0;
       border: 1px solid #AFB3B6;
       border-radius: 5px;
@@ -40,6 +41,14 @@
     .self-intro div div {
       display: block;
       margin: 0 1rem;
+    }
+
+    .autobiography .paragraph {
+      margin: 0;
+    }
+
+    .autobiography .paragraph span {
+      font-weight: 900;
     }
 
     .skills-section {
@@ -68,7 +77,8 @@
       content: "- ";
     }
 
-    .work-experience {
+    .work-experience,
+    .autobiography {
       margin: 1rem 0;
       padding: 1rem;
       background-color: FAFAFA;
@@ -116,6 +126,26 @@
       margin: 0.5rem;
     }
 
+    .side-project .content {
+      display: flex;
+    }
+
+    .side-project .content .img-content {
+      width: 40%;
+    }
+
+    .side-project .content .img-content img {
+      width: 100%;
+    }
+
+    .side-project .content .desc-content {
+      width: 60%;
+      margin: 0 1rem;
+    }
+
+
+
+
     .education-level {
       margin: 1rem 0;
       padding: 1rem;
@@ -143,16 +173,10 @@
 
   <section class="self-intro">
     <div class="self-intro-top">
-      <img src="https://i.imgur.com/uT3rHIk.png" alt="">
+      <img src="https://i.imgur.com/byxrFyg.png" alt="">
       <div>
         <h1>王品晟</h1>
-        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-          content
-          here', making it look like readable English. Many desktop publishing packages and web page editors now use
-          Lorem Ipsum
-          as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various
-          versions have evolved over the years, sometimes by accident, someti</p>
+        <p>學生時期主修商業會計，畢業後任職於會計軟體公司擔任軟體訓練師。任職期間不斷增加對於軟體設計之興趣，最後決定朝Web開發學習並且發展，並且希望未來可以成為一位優秀的工程師。</p>
       </div>
     </div>
     <div class="contact-info">
@@ -160,8 +184,40 @@
       <p><i class="fa-solid fa-envelope"></i> : r17369@gmail.com</p>
     </div>
   </section>
+  <section class="autobiography">
+    <h1>自傳</h1>
+    <hr>
+    <div class="desc">
+      <p class="paragraph">
+        　您好，感謝您查看這份履歷，我叫王品晟。
+      </p>
+      <br>
+      <p class="paragraph">
+        　我大學畢業於 <span>台北商業大學 (前:台北商專)</span>
+        財政稅務系，主要學習會計﹑稅務相關知識，隨後任職於一間會計軟體公司擔任 <span>軟體訓練師</span>
+        。所謂軟體訓練師是為公司的客戶提供 <span>即時性客服﹑系統教學以及銷售軟體的服務</span> ，是一份極具需要 <span>溝通能力</span> 的一份工作。從業時長七年。
+      </p>
+      <br>
+      <p class="paragraph">
+        　因為職務的關係，我常常需要思考軟體流程的走向，也漸漸的有一些軟體設計的思維，所以對軟體設計開始感到興趣。也看了很多科技資訊，覺得網頁開發是個很重要的領域，因為一般人上網，最簡單的方式就是透過瀏覽器進行網頁查看，所以商業需求是龐大的。也意味著網頁軟體工程師，是一個有遠景的工作。
+      </p>
+      <br>
+      <p class="paragraph">
+        　 <span>2024 年初</span>
+        ，我開始了自學的道路。一開始是白天上班，然後利用晚上或是假日進行學習。2024年6月我正式辭去七年的工作，開始全職學習，我蒐集了一個一個相關系列的影片規劃在每天去學習觀看，並且實作。
+      </p>
+      <br>
+      <p class="paragraph">
+        　學習至今，<span>對於 JavaScript ﹑HTML ﹑CSS 已經有所掌握，對於模仿進行切版打造靜態網站是有能力達成。也會用 Node.js 搭配 MySQL 設計出一個 Resful API
+          伺服器。</span>
+        目前也正積極學習前端框架，如：React，並且了解如何將自己的 Server 架設於 AWS。
+      </p>
+
+
+    </div>
+  </section>
   <section class="skills-section">
-    <h1>技能</h1>
+    <h1>網頁開發技能</h1>
     <hr>
     <div class="skills">
       <div class="font-back-skills">
@@ -176,14 +232,8 @@
         <h3>前端</h3>
         <hr>
         <p>HTML﹑CSS</p>
-        <P>Javascript</P>
+        <P>JavaScript</P>
         <p>Bootstrap</p>
-      </div>
-      <div class="other-skills">
-        <h3>其他</h3>
-        <hr>
-        <p>Git版本控管</p>
-        <p>Heroku 平台佈署</p>
       </div>
     </div>
   </section>
@@ -217,6 +267,30 @@
         </ul>
       </div>
     </div>
+  </section>
+  <section class="side-project">
+    <h1>個人作品</h1>
+    <hr>
+    <div class="content">
+      <div class="img-content">
+        <img src="https://i.imgur.com/RSxD9ir.png" alt="">
+      </div>
+      <div class="desc-content">
+        <h3>Easy Chat 簡易聊天網站</h3>
+        <hr>
+        <ul>
+          <li>採用 Node.js 搭配 Express 框架</li>
+          <li>資料庫採用 MySQL</li>
+          <li>使用 socket.io 套件打造即時聊天功能</li>
+          <li>RWD 設計，支援不同螢幕尺寸</li>
+          <li>動態畫面參考 : <a
+              href="https://docs.google.com/presentation/d/13Qrdm8-yz5kJk7ExvNl55_bhgTZ9LYLTYtj04XGv-n4/edit?usp=sharing">Google
+              Slide</a></li>
+          <li>程式碼 : <a href="https://github.com/WangPinChen/easy_chat_work">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
   </section>
   <section class="education-level">
     <h1>學歷</h1>
